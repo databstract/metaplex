@@ -45,8 +45,9 @@ export const ArtistView = () => {
         >
           <Col span={24}>
             <h2>
-              {/* <MetaAvatar creators={creator ? [creator] : []} size={100} /> */}
-              {creator?.info.name || creator?.info.address}
+              {/* <MetaAvatar creators={[artist]} size={100} /> */}
+
+              DATAbstract
             </h2>
             <br />
             <div className="info-header">ABOUT THE CREATOR</div>

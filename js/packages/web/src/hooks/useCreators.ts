@@ -32,9 +32,9 @@ export const useCreators = (auction?: AuctionView) => {
           verified: true,
           // not exact share of royalties
           share: (1 / arr.length) * 100,
-          image: knownCreator?.info.image || '',
-          name: knownCreator?.info.name || '',
-          link: knownCreator?.info.twitter || '',
+          image: 'https://i.ibb.co/nmBTQV5/DAlogo400x400.png' || '',
+          name: 'DATAbstract' || '',
+          link: '@dat_a_bstract' || '',
         } as Artist;
       }),
     [auction, whitelistedCreatorsByCreator],

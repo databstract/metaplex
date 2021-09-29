@@ -125,7 +125,7 @@ export const ArtView = () => {
                           marginBottom: 5,
                         }}
                       >
-                        <MetaAvatar creators={[creator]} size={64} />
+                        <MetaAvatar creators={[artist]} size={64} />
                         <div>
                           <span className="creator-name">
                             {creator.name ||
@@ -204,7 +204,7 @@ export const ArtView = () => {
           </Col>
           <Col span="12">
             <Divider />
-            {art.creators?.find(c => !c.verified) && unverified}
+            DATAbstract
             <br />
             <div className="info-header">ABOUT THE CREATION</div>
             <div className="info-content">{description}</div>

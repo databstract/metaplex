@@ -16,10 +16,15 @@ export const ArtistCard = ({ artist }: { artist: Artist }) => {
       <div>
         <MetaAvatar creators={[artist]} size={100} />
         <div className="artist-card-name">
-          {artist.name || shortenAddress(artist.address || '')}
+        DATAbstract
         </div>
         <div className="artist-card-description">{artist.about}</div>
       </div>
     </Card>
   );
 };
+
+
+/**
+*          {artist.name || shortenAddress(artist.address || '')}
+*/

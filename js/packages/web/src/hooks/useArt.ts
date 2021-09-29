@@ -62,9 +62,9 @@ const metadataToArt = (
           address: creator.address,
           verified: creator.verified,
           share: creator.share,
-          image: knownCreator?.info.image || '',
-          name: knownCreator?.info.name || '',
-          link: knownCreator?.info.twitter || '',
+          image: 'https://i.ibb.co/nmBTQV5/DAlogo400x400.png' || '',
+          name: 'DATAbstract' || '',
+          link: '@dat_a_abstract' || '',
         } as Artist;
       })
       .sort((a, b) => {

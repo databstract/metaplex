@@ -32,9 +32,9 @@ export const ArtistsView = () => {
               key={id}
               artist={{
                 address: m.info.address,
-                name: m.info.name || '',
-                image: m.info.image || '',
-                link: m.info.twitter || '',
+                name: 'DATAbstract' || '',
+                image: 'https://i.ibb.co/nmBTQV5/DAlogo400x400.png' || '',
+                link: '@dat_a_abstract' || '',
               }}
             />
           </Link>
