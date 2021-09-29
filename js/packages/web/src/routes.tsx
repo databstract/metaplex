@@ -9,7 +9,10 @@ import {
   ArtworksView,
   AuctionCreateView,
   AuctionView,
+  AboutView,
   HomeView,
+  RoadMapView,
+  StoreView,
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -54,6 +57,13 @@ export function Routes() {
               path="/auction/:id/billing"
               component={() => <BillingView />}
             />
+            <Route exact path="/about" component={() => <AboutView />} />
+            <Route exact path="/roadmap" component={() => <RoadMapView />} />
+            <Route exact path="/store" component={() => <StoreView />} />
+<Route path='/discord' component={() => {
+     window.location.href = 'https://discord.gg/5VnYG5KxMg';
+     return null;
+}}/>
             <Route path="/" component={() => <HomeView />} />
           </Switch>
         </Providers>

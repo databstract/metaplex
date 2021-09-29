@@ -7,3 +7,6 @@ export { AuctionView } from './auction';
 export { AuctionCreateView } from './auctionCreate';
 export { ArtworksView } from './artworks';
 export { AnalyticsView } from './analytics';
+export { AboutView } from './about';
+export { RoadMapView } from './roadmap';
+export { StoreView } from './store';
