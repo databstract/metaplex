@@ -12,6 +12,9 @@ import useWindowDimensions from '../../utils/layout';
 import { useMeta } from '../../contexts';
 import { useEffect, useState } from 'react';
 const { Content } = Layout;
+import { Steps, Divider,Image } from 'antd';
+
+const { Step } = Steps;
 
 export const LandingView = () => {
   const { metadata, isLoading } = useMeta();
@@ -53,105 +56,89 @@ export const LandingView = () => {
 
   return (
     <>
+
+
       <Content style={{width: '100%'}}>
-      {width < 750 ?
+
       <Row>
 
 
-        <Col span={24}>
-          <div style={{ width: '100%' }}>
-            <div
-              className="image-stack"
-              style={{
-                margin: '12px auto',
-                fontSize: 18,
-                width: '10rem',
-                height: '10rem',
-              }}
-            >
-              <div className="stack-item">
-                {<img className="item-img" src="/img/logo.gif" />}
-              </div>
-            </div>
-          </div>
+             <Col span={24}>
+               <h2 className="page-section-heading text-center2 text-uppercase text-white" >Data-Driven Generative Art</h2>
+<div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '2rem' }}></div>
+
+               </Col>
+</Row>
+
+<Row>
+      <Col flex="1 0 20%">
+
+       <Link to={`/hippa`}> <Image
+        width={275}
+        src="DecimalHalfPi-YZ-endlessOwt-logx-Sinx-logx-85.png" /></Link>
+
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >HiPPAblocks</h4>
+
+
         </Col>
-        <Col span={24}>
-          <div className="auction-container" style={{ margin: 0 }}>
-          <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '2rem' }}>
-              {/* <!-- Masthead Heading--> */}
-              <h1 className="masthead-heading text-uppercase mb-0">DATAbstract</h1>
-              {/* <!-- Icon Divider-->*/}
-             {/*  <div className="divider-custom divider-light">*/}
-                  {/* <div className="divider-custom-line"></div>*/}
-                  {/* <div className="divider-custom-icon"><svg className="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>*/}
-                  {/* <!-- <i className="fas fa-star"></i> Font Awesome fontawesome.com --> */}
-                  {/* </div>*/}
-                  {/* <div className="divider-custom-line"></div>*/}
-              {/* </div>*/}
+
+<Col flex="1 0 3%"></Col>
+
+              <Col flex="1 0 20%">
+       <Link to={`/candles`}> <Image
+        width={275}
+        src="0000-XZ-torchOwt-Time-Price-Vol-90-70-WM.png"/></Link>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >CryptoCANDLES</h4>
 
 
-
-
-              {/* <!-- Masthead Subheading--> */}
-              <p className="masthead-subheading font-weight-light mb-0">Data-driven generative art</p>
-              <p className="masthead-subheading font-weight-light mb-0"><b>Coming this October!</b></p>
-            </div>
-          </div>
         </Col>
+
+<Col flex="1 0 3%"></Col>
+        <Col flex="1 0 20%">
+
+       <Link to={`/natdata`}> <Image
+        width={275}
+        src="DOGE-USDT-Apr-15th-2021-XZ-plasmaBlk-WM.png" /></Link>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >NATdata</h4>
+
+
+        </Col>
+</Row>
+
+
+
+
+
+
+<Row>
+<Divider />
+               <Col span={24}>
+               <h2 className="page-section-heading text-center2 text-uppercase text-white" >Roadmap</h2>
+               </Col>
+
+<div className="divider-custom divider-light" style={{ width: '100%', marginTop: '2rem' }}></div>
+
+        <div className="auction-container" style={{ margin: 0 }}>
+
+<div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1rem' }}>
+            <Col span={24}>
+                <div className="centered-roadmap">
+                    <Steps className="center-padding" direction="vertical" current={0}>
+                        <Step title="GEN00: Base 3 Classes" subTitle="October 2021" description="Auction of 96 Master Editions: HiPPAblocks, cryptoCANDLES, and NATdata" />
+                        <Step title="GEN01: Weekly Drops" subTitle="November - December 2021" description="8 Weekly Drops with 32 artworks from a BASE 3 Class and exclusive Strange Attractor drops" />
+                        <Step title="GEN02" subTitle="Q1 2022" description="Community integration for dataset selection and data stream API implementation" />
+                        <Step title="GEN03" subTitle="Q2 2022" description="User data portal for iconography and dataset storage on the blockchain" />
+                       </Steps>
+                </div>
+            </Col>
+</div>
+</div>
       </Row>
-      :
-      <Row>
-        <Col span={18}>
-          <div className="auction-container" style={{ margin: 0 }}>
-            <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '2rem' }}>
-              {/* <!-- Masthead Heading--> */}
-              <h1 className="masthead-heading text-uppercase mb-0">DATAbstract</h1>
-              {/* <!-- Icon Divider-->*/}
-             {/*  <div className="divider-custom divider-light">*/}
-                  {/* <div className="divider-custom-line"></div>*/}
-                  {/* <div className="divider-custom-icon"><svg className="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>*/}
-                  {/* <!-- <i className="fas fa-star"></i> Font Awesome fontawesome.com --> */}
-                  {/* </div>*/}
-                  {/* <div className="divider-custom-line"></div>*/}
-              {/* </div>*/}
-              {/* <!-- Masthead Subheading--> */}
-              <p className="masthead-subheading font-weight-light mb-0">Data-driven generative art</p>
-              <p className="masthead-subheading font-weight-light mb-0"><b>Coming this October!</b></p>
-            </div>
-          </div>
-        </Col>
-        {/*<Col span={6}>
-          <div style={{ width: '100%' }}>
-            <div
-              className="image-stack"
-              style={{
-                margin: '12px auto',
-                fontSize: 18,
-                width: '10rem',
-                height: '10rem',
-              }}
-            >
-              <div className="stack-item">
-                {<img className="item-img" src="/img/logo.gif" />}
-              </div>
-            </div>
-          </div>
-        </Col>*/}
-      </Row>
-      }
-
-      {/*
-      <Col>
-        <div className="auction-container" style={{ margin: 0, marginTop: '3rem' }}>
-          <div style={{ width: '100%', marginTop: '2rem' }}>
-            {artworkGrid}
-          </div>
-        </div>
-      </Col>
-      */}
-
 
       </Content>
     </>
   );
 };
+
+
+

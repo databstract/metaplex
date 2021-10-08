@@ -12,7 +12,11 @@ import {
   AboutView,
   HomeView,
   RoadMapView,
-  StoreView,
+   MarketplaceView,
+   ProjectsView,
+   NatdataView,
+   HippaView,
+   CandlesView,
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -59,9 +63,19 @@ export function Routes() {
             />
             <Route exact path="/about" component={() => <AboutView />} />
             <Route exact path="/roadmap" component={() => <RoadMapView />} />
-            <Route exact path="/store" component={() => <StoreView />} />
+            <Route exact path="/marketplace" component={() => <MarketplaceView />} />
+
+            <Route exact path="/projects" component={() => <ProjectsView />} />
+            <Route exact path="/hippa" component={() => <HippaView />} />
+            <Route exact path="/natdata" component={() => <NatdataView />} />
+            <Route exact path="/candles" component={() => <CandlesView />} />
+
 <Route path='/discord' component={() => {
      window.location.href = 'https://discord.gg/5VnYG5KxMg';
+     return null;
+}}/>
+<Route path='/twitter' component={() => {
+     window.location.href = 'https://www.twitter.com/dat_a_bstract';
      return null;
 }}/>
             <Route path="/" component={() => <HomeView />} />

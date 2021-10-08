@@ -1,6 +1,8 @@
 @import '~antd/es/style/themes/dark.less';
 @import '~antd/dist/antd.dark.less';
 
+@import url('https://fonts.googleapis.com/css?family=Kanit|Lato&display=swap&css');
+
 html {
   overflow-y: scroll;
   width: 100vw;
@@ -8,7 +10,7 @@ html {
 }
 #root {
   height: 100%;
-  font-family: 'Graphik Web', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 #root::before {
@@ -26,10 +28,14 @@ html {
 body {
   --row-highlight: @background-color-base;
   margin: 0;
+  background-color: #151518;
+
+  // background-image: url("/Background50Color.png");
+  // background-size: 100%;
 
   font-style: normal;
   font-weight: normal;
-  font-family: 'Graphik Web' !important;
+  font-family: 'Kanit' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,7 +60,7 @@ img:not([src]) {
   width: 100%;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Kanit, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -109,10 +115,10 @@ code {
   width: 30px;
   height: 30px;
   border-radius: 30px;
-  background-color: #434343 !important;
+  background-color: #151518 !important;
 
   :hover {
-    background-color: #434343;
+    background-color: #151518;
   }
 }
 
@@ -120,6 +126,11 @@ code {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.text-center2 {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .ant-upload.ant-upload-drag {

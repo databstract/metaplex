@@ -8,6 +8,12 @@ import useWindowDimensions from '../../utils/layout';
 import { MenuOutlined } from '@ant-design/icons';
 import { useMeta } from '../../contexts';
 
+import { TwitterOutlined } from '@ant-design/icons';
+
+
+import Icon from '@ant-design/icons';
+
+
 const UserActions = () => {
   const { publicKey } = useWallet();
   const { whitelistedCreatorsByCreator, store } = useMeta();
@@ -56,26 +62,66 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         <Button className="app-btn">Home</Button>
       </Link>
 
-      <Link to={`/store`}>
-        <Button className="app-btn">Store</Button>
+      <Link to={`/marketplace`}>
+        <Button className="app-btn">Marketplace</Button>
       </Link>
 
-      <Link to={`/roadmap`}>
-        <Button className="app-btn">Roadmap</Button>
-      </Link>
+      <Dropdown overlay={
+      <Menu>
+       {/* <Menu.SubMenu title="Options">*/}
+          <Menu.Item key="display">
+         <Link to="/hippa">   HiPPAblocks </Link>
+          </Menu.Item>
+          <Menu.Item key="mode">
+         <Link to="/candles">    CryptoCANDLES</Link>
+                      </Menu.Item>
 
-      <Link to={`/about`}>
-        <Button className="app-btn">About</Button>
-      </Link>
+           <Menu.Item key="mode">
+         <Link to="/natdata">    NATdata</Link>
+                      </Menu.Item>
+       {/* </Menu.SubMenu>*/}
+      </Menu>}>
+     <Link to="/projects"> <Button className="app-btn">Projects</Button></Link>
+    </Dropdown>
+
+
+
+     <Dropdown overlay={
+      <Menu>
+
+          <Menu.Item key="roadmap">
+         <Link to="/roadmap">    Roadmap</Link>
+                      </Menu.Item>
+
+      </Menu>}>
+     <Link to={`/about`}> <Button className="app-btn">About</Button></Link>
+    </Dropdown>
+
+
+
+
+
       <Link to={`/artworks`}>
         <Button className="app-btn">
           {connected ? 'My Items' : 'Gallery'}
         </Button>
       </Link>
 
+
+
+
+
       <Link to={`/discord`}>
-        <Button className="app-btn">Discord</Button>
+        <Button className="app-btn">
+        <Icon component={() => (<img width="35" src="/discord2.svg" />)} /></Button>
       </Link>
+
+      <Link to={`/twitter`}>
+        <Button className="app-btn">
+        <Icon component={() => (<img width="30" src="/twitter.svg" />)} /></Button>
+      </Link>
+
+
 
       {/*<Link to={`/artists`}>
         <Button className="app-btn">Creators</Button>
@@ -138,6 +184,9 @@ const MetaplexMenu = () => {
               </Menu.Item>
 
                                 <Menu.Item>
+
+
+
                 <Link to={`/discord`}>
         <Button className="app-btn">Discord</Button>
       </Link>
@@ -166,9 +215,12 @@ export const AppBar = () => {
 
   return (
     <>
+
+<div className="app-bar-side">
+{window.location.hash !== '#/analytics' && <Notifications />}
+</div>
+
       <div className="app-left app-bar-box">
-        {window.location.hash !== '#/analytics' && <Notifications />}
-        <div className="divider" />
         <MetaplexMenu />
       </div>
       {connected ? (

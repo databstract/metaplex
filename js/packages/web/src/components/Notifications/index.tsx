@@ -16,7 +16,7 @@ import {
 } from '@oyster/common';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Connection } from '@solana/web3.js';
-import { Badge, Popover, List } from 'antd';
+import { Badge, Popover, List, Image } from 'antd';
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { closePersonalEscrow } from '../../actions/closePersonalEscrow';
@@ -495,7 +495,15 @@ export function Notifications() {
       content={content}
       trigger="click"
     >
-      <h1 className="title">M</h1>
+    <div
+      style={{
+        display: 'flex'
+      }}
+    >
+   <img width="220" src="/databstract@3x.png" />
+</div>
+
+     {/* <h1 className="title">DATAbstract</h1>*/}
     </Popover>
   );
 

@@ -125,7 +125,7 @@ export const ArtView = () => {
                           marginBottom: 5,
                         }}
                       >
-                        <MetaAvatar creators={[artist]} size={64} />
+                        <MetaAvatar creators={[creator]} size={64} />
                         <div>
                           <span className="creator-name">
                             {creator.name ||
