@@ -13,11 +13,11 @@ WORKDIR /app
 COPY ./js /app
 
 # Install all the dependencies
-RUN yarn install --frozen-lockfile --network-timeout=100000
+RUN yarn install --force --frozen-lockfile --network-timeout=100000
 RUN yarn bootstrap
 
 # HERE ADD YOUR STORE WALLET ADDRESS
-ENV REACT_APP_STORE_OWNER_ADDRESS_ADDRESS=""
+ENV REACT_APP_STORE_OWNER_ADDRESS_ADDRESS="3ANVZo8XUydS9xdPWHqhBJsTpEGg8hZN8WBRYiK2tpDi"
 
 # Generate the build of the application
 RUN yarn build
