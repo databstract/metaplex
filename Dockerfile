@@ -13,7 +13,7 @@ WORKDIR /app
 COPY ./js /app
 
 # Install all the dependencies
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --network-timeout=100000
 RUN yarn bootstrap
 
 # HERE ADD YOUR STORE WALLET ADDRESS
