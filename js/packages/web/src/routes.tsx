@@ -67,7 +67,7 @@ export function Routes() {
 
             <Route exact path="/projects" component={() => <ProjectsView />} />
             <Route exact path="/hippa" component={() => <HippaView />} />
-            <Route exact path="/natdata" component={() => <NatdataView />} />
+            <Route exact path="/lightcurves" component={() => <NatdataView />} />
             <Route exact path="/candles" component={() => <CandlesView />} />
 
 <Route path='/discord' component={() => {

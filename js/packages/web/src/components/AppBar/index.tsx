@@ -77,15 +77,15 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
                       </Menu.Item>
 
            <Menu.Item key="mode">
-         <Link to="/natdata">    NATdata</Link>
+         <Link to="/lightcurves">    lightCURVES</Link>
                       </Menu.Item>
        {/* </Menu.SubMenu>*/}
       </Menu>}>
-     <Link to="/projects"> <Button className="app-btn">Projects</Button></Link>
+     <Link to="/projects"> <Button className="app-btn">GEN Zero</Button></Link>
     </Dropdown>
 
 
-
+{/*
      <Dropdown overlay={
       <Menu>
 
@@ -96,7 +96,7 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
       </Menu>}>
      <Link to={`/about`}> <Button className="app-btn">About</Button></Link>
     </Dropdown>
-
+*/}
 
 
 

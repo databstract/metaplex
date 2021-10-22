@@ -20,13 +20,16 @@ export const SetupView = () => {
   return (
     <>
           <h2 className="page-section-heading text-center text-uppercase text-white">CryptoCandles</h2>
+                      <h3 className="page-section-heading text-center2 text-uppercase text-white" >Coming Soon</h3>
+                      <div className="divider-custom divider-light" style={{ width: '100%', marginTop: '2rem' }}></div>
+
+
 <Col flex="1 0 3%"></Col>
 
               <Col flex="1 0 20%">
         <Image
         width={275}
         src="0000-XZ-torchOwt-Time-Price-Vol-90-70-WM.png" />
-      <h4 className="page-section-heading text-center2 text-uppercase text-white" >CryptoCANDLES</h4>
 
 
         </Col>

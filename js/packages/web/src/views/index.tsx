@@ -12,5 +12,5 @@ export { RoadMapView } from './roadmap';
 export { MarketplaceView } from './marketplace';
 export { ProjectsView } from './projects';
 export { HippaView } from './hippa';
-export { NatdataView } from './natdata';
+export { NatdataView } from './lightcurves';
 export { CandlesView } from './candles';
