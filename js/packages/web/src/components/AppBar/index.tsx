@@ -213,10 +213,10 @@ const MetaplexMenu = () => {
       </Menu.Item>
 
 
+
       {/*<Link to={`/artists`}>
         <Button className="app-btn">Creators</Button>
       </Link>*/}
-              </Menu.Item>
             </Menu>
           }
         >
