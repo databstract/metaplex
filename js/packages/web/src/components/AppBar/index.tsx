@@ -66,6 +66,8 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         <Button className="app-btn">Marketplace</Button>
       </Link>
 
+
+
       <Dropdown overlay={
       <Menu>
        {/* <Menu.SubMenu title="Options">*/}
@@ -155,44 +157,60 @@ const MetaplexMenu = () => {
 
    <Menu.Item>
                 <Link to={`/store`}>
-        <Button className="app-btn">Store</Button>
+        <Button className="app-btn">Marketplace</Button>
       </Link>
                             </Menu.Item>
 
 
-                   <Menu.Item>
-                <Link to={`/roadmap`}>
-        <Button className="app-btn">Roadmap</Button>
+   <Menu.Item>
+
+      <Dropdown overlay={
+      <Menu>
+       {/* <Menu.SubMenu title="Options">*/}
+          <Menu.Item key="display">
+         <Link to="/hippa">   HiPPAblocks </Link>
+          </Menu.Item>
+          <Menu.Item key="mode">
+         <Link to="/candles">    CryptoCANDLES</Link>
+                      </Menu.Item>
+
+           <Menu.Item key="mode">
+         <Link to="/lightcurves">    lightCURVES</Link>
+                      </Menu.Item>
+       {/* </Menu.SubMenu>*/}
+      </Menu>}>
+     <Link to="/projects"> <Button className="app-btn">GEN Zero</Button></Link>
+    </Dropdown>
+
+</Menu.Item>
+
+
+
+  <Menu.Item>
+      <Link to={`/artworks`}>
+        <Button className="app-btn">
+          {connected ? 'My Items' : 'Gallery'}
+        </Button>
       </Link>
-                            </Menu.Item>
 
-                  <Menu.Item>
-                <Link to={`/about`}>
-        <Button className="app-btn">About</Button>
+</Menu.Item>
+
+
+  <Menu.Item>
+      <Link to={`/discord`}>
+        <Button className="app-btn">
+        <Icon component={() => (<img width="35" src="/discord2.svg" />)} /></Button>
       </Link>
-                            </Menu.Item>
 
+      </Menu.Item>
 
-              <Menu.Item>
-
-              <Menu.Item>
-                <Link to={`/artworks`}>
-                  <Button className="app-btn">
-                    {connected ? 'My Items' : 'Gallery'}
-                  </Button>
-                </Link>
-              </Menu.Item>
-
-                                <Menu.Item>
-
-
-
-                <Link to={`/discord`}>
-        <Button className="app-btn">Discord</Button>
+  <Menu.Item>
+      <Link to={`/twitter`}>
+        <Button className="app-btn">
+        <Icon component={() => (<img width="30" src="/twitter.svg" />)} /></Button>
       </Link>
-                            </Menu.Item>
 
-
+      </Menu.Item>
 
 
       {/*<Link to={`/artists`}>
