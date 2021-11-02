@@ -5,11 +5,13 @@ import { Button } from 'antd';
 // import { useHistory } from 'react-router-dom';
 // import { useMeta } from '../../contexts';
 import { Link, useHistory } from 'react-router-dom';
-import {Row, Col, Divider,Layout, Image,Steps, List} from 'antd';
+import {Row, Col, Divider,Layout, Image,Steps, List,Table} from 'antd';
 const { Content } = Layout;
 import React, { useEffect,useState } from 'react';
 import useWindowDimensions from '../../utils/layout';
 import { useMeta } from '../../contexts';
+
+
 export const SetupView = () => {
   // const { store } = useMeta();
   // const history = useHistory();
@@ -63,7 +65,10 @@ export const SetupView = () => {
       <h5 className="page-section-heading text-center2 text-uppercase text-white" >A trigonometric data table conceived by the Greek mathematician Hipparchus over 2000 years ago</h5>
 
 
-
+      <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
+      <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
+      <a href="https://t.co/6w6Rbe3DhY"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
 
         </Col>
 
@@ -96,14 +101,12 @@ export const SetupView = () => {
 
 <Col flex="1 0 3%"></Col>
         <Col flex="1 0 20%">
-            <h3 className="page-section-heading text-center2 text-uppercase text-white" >NATdata</h3>
+            <h3 className="page-section-heading text-center2 text-uppercase text-white" >lightCURVES</h3>
                <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '.5rem' }}></div>
 
-       <Link to={`/natdata`}>
-                     <img src="DOGE-USDT-Apr-15th-2021-XZ-plasmaBlk-WM.png" alt="hippa" width="275"/>
+       <Link to={`/lightcurves`}>
+                     <img src="0003KEPLER-YZ-growthBlk-time-electrons-centroid-WM.png" alt="hippa" width="275"/>
 
-
-      {/*  <Image width={275} src="DOGE-USDT-Apr-15th-2021-XZ-plasmaBlk-WM.png" />*/}
 
 
       </Link>
@@ -114,6 +117,11 @@ export const SetupView = () => {
 
       <h5 className="page-section-heading text-center2 text-uppercase text-white" >Telescope data from NASA’s Kepler Mission launched to discover Earth-size planets orbiting other stars</h5>
 
+
+      <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
+      <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
+      <a href="https://t.co/6w6Rbe3DhY"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
 
 
 

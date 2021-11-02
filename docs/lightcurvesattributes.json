@@ -1,16 +1,26 @@
-// import { useStore, useWalletModal } from '@oyster/common';
-// import { useWallet } from '@solana/wallet-adapter-react';
-import { Button } from 'antd';
-// import { useCallback, useEffect, useState } from 'react';
-// import { useHistory } from 'react-router-dom';
-// import { useMeta } from '../../contexts';
-import { Image } from 'antd';
-import React, { useState } from 'react';
-import {Row, Col, Divider,Layout, Steps, List,Table} from 'antd';
+{   "name": "DATAset-lightCURVE-GEN00",
+    "description": "Base data set used for creation of the DATAbstract GEN00 lightCURVE set.",
+    "seller_fee_basis_points": 1000,
+    "attributes":[
+        {"trait_type":"Percent Capture", "value": "H:90 V:90"},
+        {"trait_type":"Plot Size", "value": "4000-4000pxl"},
+        {"trait_type":"Data Size", "value": "2975 3D points"},
+        {"trait_type":"Cloud Size","value":"~8.8M points"},
+        {"trait_type":"DAscript", "value": "PROT"},
+        {"trait_type":"DAscript Version", "value": "V4"},
+        {"trait_type":"Subsets", "value": [0000, 0001, 0002, 0004, 0005, 0007, 0008, 0009, 0010, 0011, 0012, 0015]},
+        {"trait_type":"Org. Data Source", "value": "https://archive.stsci.edu/missions-and-data/kepler"}],
+    "uri":"https://www.arweave.net/Y1WueHmV29mEHx6Ki2Qg8hD2VBtkmmqqMQREfGXkr4k?ext=png" }
 
 
-const dataSource = [
- {
+
+
+
+
+
+
+
+{
             "name": "lightCURVE|01",
             "description": "0000KEPLER<--ELECTRONS",
             "palette": "growthBlk",
@@ -329,12 +339,10 @@ const dataSource = [
             "jvariable": "electrons",
             "kvariable": "centroid",
             "view": "j"
-        },
+        }
 
-];
 
-const columns = [
-  {
+{
     title: 'Name',
     dataIndex: 'name',
     key: 'name',
@@ -358,6 +366,11 @@ const columns = [
 
 
     {
+    title: 'X Range',
+    dataIndex: 'xrange',
+    key: 'xrange',
+  },
+    {
     title: 'i Var',
     dataIndex: 'ivariable',
     key: 'ivariable',
@@ -375,93 +388,5 @@ const columns = [
 
         {
     title: 'View',
-    dataIndex: 'view',
+    dataIndex: 'viewfrom',
     key: 'viewfrom',
-  },
-];
-
-
-export const SetupView = () => {
-  // const { store } = useMeta();
-  // const history = useHistory();
-  // const wallet = useWallet();
-  // const { setVisible } = useWalletModal();
-  // const connect = useCallback(
-  //   () => (wallet.wallet ? wallet.connect().catch() : setVisible(true)),
-  //   [wallet.wallet, wallet.connect, setVisible],
-  // );
-
-  return (
-    <>
-               <h2 className="page-section-heading text-center text-uppercase text-white">lightCURVES</h2>
-               <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '2rem' }}></div>
-
-<Row>
-<Col flex="0 0 0%"></Col>
- <Col flex="0 0 15%">
-<div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '0.5rem' }}></div>
-<img src="Keplerfieldofviewstarchart.gif" alt="keplerchart" width="240" />
-
-        </Col>
-<Col flex="0 0 5%"></Col>
- <Col flex="1 0 35%">
-
- <p>The Kepler space telescope was launched by NASA in early 2009 to discover Earth-size planets orbiting other stars. Using a photometer to continuously monitor over 150,000 stars, scientists grappled with mountains of data, and over their nine-year search detected nearly 3,000 planets.</p>
-
-
-               <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1rem' }}></div>
-
-<p>This collection probes and transforms the commissioning data beamed back to Earth and later released to the general public. Through abstract visualization, we gain a glimpse into the strange complexity and beauty hidden in universal data. </p>
-
-               <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1rem' }}></div>
-
- <p>Each piece arrays 2,975 data points along three dimensions: time, electrons, and centroids.</p>
-
-
-        </Col>
-
-<Col flex="1 0 3%"></Col>
- <Col flex="1 0 20%">
-
-       <Image
-        width={275}
-        src="0003KEPLER-YZ-growthBlk-time-electrons-centroid-WM.png"/>
-
-
-
-        </Col>
-
-
-</Row>
-<Divider />
-
-         <h3 className="page-section-heading text-center text-uppercase text-white">Dataset Metadata</h3>
-                        <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1rem' }}></div>
-
-
-<Row>
-
-
-<Col flex="1 0 40%">
-
-        <a href="https://www.arweave.net/-B6B_KmyTMn-9y3MonBWDvJTbwR5q5G38-9dcL196aA?ext=html">
-        <img
-        width="575"
-        src="lightcurvesdatajson.png"/></a>
-</Col>
-</Row>
-
-
-               <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '2rem' }}></div>
-
-         <h3 className="page-section-heading text-center text-uppercase text-white">Attribute Table</h3>
-                        <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1rem' }}></div>
-
-<Row>
-
-<Table dataSource={dataSource} columns={columns} />
-
-</Row>
-    </>
-  );
-};

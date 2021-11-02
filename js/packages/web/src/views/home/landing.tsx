@@ -93,7 +93,10 @@ export const LandingView = () => {
       <h3 className="page-section-heading text-center2 text-uppercase text-white" >HiPPAblocks</h3>
       <h4 className="page-section-heading text-center2 text-uppercase text-white" >32 master edition NFTs</h4>
 
-
+      <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
+      <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
+      <a href="https://t.co/6w6Rbe3DhY"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
         </Col>
 
 <Col flex="1 0 3%"></Col>
@@ -115,6 +118,11 @@ export const LandingView = () => {
       <h3 className="page-section-heading text-center2 text-uppercase text-white" >CryptoCANDLES</h3>
       <h4 className="page-section-heading text-center2 text-uppercase text-white" >32 master edition NFTs</h4>
 
+ {/*
+<div className="divider-custom divider-light" style={{ width: '100%', marginTop: '1rem' }}></div>
+<a href="https://t.co/JaI4VYMoZ3"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a>
+*/}
+
         </Col>
 
 <Col flex="1 0 3%"></Col>
@@ -124,13 +132,15 @@ export const LandingView = () => {
                      <img src="0003KEPLER-YZ-growthBlk-time-electrons-centroid-WM.png" alt="lightcurves" width="275"/>
 
 
-      {/*  <Image width={275} src="DOGE-USDT-Apr-15th-2021-XZ-plasmaBlk-WM.png" />*/}
-
 
       </Link>
             <h3 className="page-section-heading text-center2 text-uppercase text-white" >lightCURVES</h3>
       <h4 className="page-section-heading text-center2 text-uppercase text-white" >32 master edition NFTs</h4>
 
+      <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
+      <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
+      <a href="https://t.co/6w6Rbe3DhY"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
 
         </Col>
 </Row>
