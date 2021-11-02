@@ -446,7 +446,7 @@ export const SetupView = () => {
 
         <a href="https://www.arweave.net/-B6B_KmyTMn-9y3MonBWDvJTbwR5q5G38-9dcL196aA?ext=html">
         <img
-        width="575"
+        width="675"
         src="lightcurvesdatajson.png"/></a>
 </Col>
 </Row>

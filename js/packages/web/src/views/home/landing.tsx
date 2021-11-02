@@ -96,7 +96,7 @@ export const LandingView = () => {
       <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
       <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
       <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
-      <a href="https://t.co/6w6Rbe3DhY"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
+      <a href="https://t.co/JaI4VYMoZ3"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
         </Col>
 
 <Col flex="1 0 3%"></Col>
