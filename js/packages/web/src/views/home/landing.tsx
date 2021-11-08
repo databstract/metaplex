@@ -118,10 +118,12 @@ export const LandingView = () => {
       <h3 className="page-section-heading text-center2 text-uppercase text-white" >CryptoCANDLES</h3>
       <h4 className="page-section-heading text-center2 text-uppercase text-white" >32 master edition NFTs</h4>
 
- {/*
-<div className="divider-custom divider-light" style={{ width: '100%', marginTop: '1rem' }}></div>
-<a href="https://t.co/JaI4VYMoZ3"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a>
-*/}
+
+      <div className="container d-flex align-items-center flex-column" style={{ width: '100%', marginTop: '1.5rem' }}></div>
+      <h4 className="page-section-heading text-center2 text-uppercase text-white" >Available on:</h4>
+      <div className="page-section-heading text-center2" style={{ width: '100%', marginTop: '0rem' }}>
+      <a href="https://exchange.art/collections/cryptoCANDLES"><img src="footer-logo-large.svg" alt="exchange" width="175"/></a></div>
+
 
         </Col>
 
